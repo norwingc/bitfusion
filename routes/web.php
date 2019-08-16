@@ -11,16 +11,6 @@
 |
 */
 
-Route::get('/getVideos', function () {
-    $videos = [];
-
-    for ($i=0; $i <= 4; $i++) {
-       $video = new App\Video();
-       $video->url = 'fasdfasdf';
-       $video->title = 'fadsfasdf';
-       $video->description = "fasdfasdf";
-       array_push($videos, $video);
-    }
-
-    return response()->json($videos);
+Route::get('/', function () {
+   return view('welcome');
 });
