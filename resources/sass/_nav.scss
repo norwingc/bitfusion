@@ -1,0 +1,94 @@
+.main-nav{
+	background-color: $body-bg;
+	@include media-breakpoint-up(lg){
+		padding: 0.5rem 3rem;
+	}
+	&.isHome{
+		background-color: $primary-color;
+	}
+	.logo{
+		width: 35vw;
+		@include media-breakpoint-up(md){
+			width: 250px;
+			margin-left: 2rem;
+		}
+	}
+	.navbar-toggler{
+		&:focus{
+			outline: 0;
+		}
+		.navbar-toggler-icon{
+			&.isHome{
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(71,118,230, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+	}
+
+	.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: black;
+			}
+		}
+		@include media-breakpoint-up(lg){
+			.nav-item{
+				padding: 0 1rem;
+				position: relative;
+				&:not(:first-child):not(.singIn-button):not(.singUp-button):before{
+					content: "";
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					background-color:$tertiary-color;
+					top: 45%;
+					left: 0;
+					border-radius: 50%;
+				}
+				.nav-link{
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+			}
+		}
+		&.isHome{
+			.nav-item{
+				.nav-link{
+					position: relative;
+					color: white;
+					font-weight: bold;
+					&:hover:not(.singIn):not(.singUp){
+						&:after{
+							content: "";
+							position: absolute;
+							bottom: 0;
+							background: $tertiary-color;
+							height: 5px;
+							left: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+		.singIn{
+			border: 1px solid $body-bg;
+			text-align: center;
+			&:hover{
+				background-color:$body-bg;
+				color: $primary-color !important;
+			}
+		}
+		.singUp{
+			text-align: center;
+			background-color:$body-bg;
+			border: 1px solid $body-bg;
+			color: $primary-color !important ;
+			&:hover{
+				background-color: $primary-color;
+				color: $body-bg !important;
+			}
+		}
+	}
+
+}
