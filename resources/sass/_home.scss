@@ -40,4 +40,75 @@
 			}
 		}
 	}
+	.markets{
+		height: 40vh;
+		.titul{
+			&::after{
+				background: #212529;
+			}
+		}
+	}
+
+	.why-us{
+		position: relative;
+		@include media-breakpoint-up(md){
+			&::after{
+				content: "";
+				background-image: url(/images/logo-short-black.svg);
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background-repeat: no-repeat;
+				background-position: 125%;
+				opacity: 0.1;
+				background-size: 40%;
+			}
+		}
+
+		.titul{
+			&::after{
+				background: $primary-color
+			}
+		}
+
+		img{
+			max-width: 40vw;
+			margin: auto;
+			display: block;
+			@include media-breakpoint-up(md){
+				max-width: 10vw;
+			}
+		}
+
+		.values{
+			transition: 1s all ease;
+			z-index: 9999;
+			&:hover{
+				cursor: pointer;
+				transform: scale(1.06);
+			}
+		}
+	}
+
+	.our-coin{
+		background-image: url(/images/coin.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		@include media-breakpoint-up(md){
+			background-position: 200%;
+			background-size: 80%;
+			padding: 3rem;
+		}
+		.titul{
+			&::after{
+				background: $secundary-color;
+			}
+		}
+		a{
+			background-color: $secundary-color;
+			color: white;
+		}
+	}
 }

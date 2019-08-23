@@ -10,5 +10,39 @@
 
 @import 'nav';
 @import 'home';
+@import 'footer';
+
+.section{
+	padding: 2rem;
+}
+
+.titul{
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 2px;
+		background: red;
+		height: 4px;
+		width: 7%;
+		border-radius: 10px;
+		@include media-breakpoint-up(md){
+			width: 3%;
+		}
+	}
+}
+
+.c-primary{
+	color: $primary-color
+}
+
+.c-secundary{
+	color: $secundary-color
+}
+
+.c-tertiary{
+	color: $tertiary-color
+}
 
 

@@ -1,0 +1,26 @@
+footer{
+	background-color: #e6e6e6;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+
+	@include media-breakpoint-up(md){
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 3rem;
+	}
+	img{
+		max-width: 60vw;
+		@include media-breakpoint-up(md){
+			max-width: 25vw;
+		}
+
+		@include media-breakpoint-up(xl){
+			max-width: 10vw;
+		}
+	}
+
+}
