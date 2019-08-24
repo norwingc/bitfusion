@@ -8,9 +8,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
 @import 'nav';
 @import 'home';
 @import 'footer';
+@import 'dashboard';
 
 .section{
 	padding: 2rem;
@@ -25,24 +29,56 @@
 		left: 2px;
 		background: red;
 		height: 4px;
-		width: 7%;
+		width: 20px;
 		border-radius: 10px;
-		@include media-breakpoint-up(md){
-			width: 3%;
+	}
+}
+
+.bc-logo{
+	position: relative;
+	@include media-breakpoint-up(md){
+		&::after{
+			content: "";
+			background-image: url(/images/logo-short-black.svg);
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-repeat: no-repeat;
+			background-position: 125%;
+			opacity: 0.1;
+			background-size: 40%;
 		}
 	}
+}
+
+.z-index-999{
+	z-index: 999;
 }
 
 .c-primary{
 	color: $primary-color
 }
 
+.bc-primary{
+	background-color: $primary-color;
+}
+
 .c-secundary{
 	color: $secundary-color
 }
 
+.bc-secundary{
+	background-color: $secundary-color;
+}
+
 .c-tertiary{
 	color: $tertiary-color
+}
+
+.bc-tertiary{
+	background-color: $tertiary-color;
 }
 
 

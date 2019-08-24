@@ -12,3 +12,5 @@
 */
 
 Route::view('/', 'home', ['isHome' => true])->name('home');
+
+Route::view('/dashboard', 'dashboard', ['isHome' => false])->name('dashboard');

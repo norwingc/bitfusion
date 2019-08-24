@@ -38,7 +38,7 @@
 			</div>
 		</section>
 
-		<section class="container mt-3 our-coin section">
+		<section class="container my-3 our-coin section">
 			<h2 class="titul c-secundary">Bitfusion Coin</h2>
 			<div class="row">
 				<div class="col-sm-12 col-md-6">

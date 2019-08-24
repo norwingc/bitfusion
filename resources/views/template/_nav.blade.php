@@ -12,12 +12,27 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#">Market</a>
 			</li>
-			<li class="nav-item singIn-button">
-				<a class="nav-link singIn" href="#">Sing In</a>
-			</li>
-			<li class="nav-item singUp-button">
-				<a class="nav-link singUp" href="#">Sing Up</a>
-			</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Coin</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Wallet</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Setting</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Coin</a>
+				</li>
+
+				<li class="nav-item singIn-button">
+					<a class="nav-link singIn" href="#">Sing In</a>
+				</li>
+				<li class="nav-item singUp-button">
+					<a class="nav-link singUp" href="#">Sing Up</a>
+				</li>
+
 		</ul>
 	</div>
 </nav>

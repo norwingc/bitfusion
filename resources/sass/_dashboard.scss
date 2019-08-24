@@ -1,0 +1,65 @@
+.dashboard{
+	.welcome{
+		padding: 2rem;
+		@include media-breakpoint-up(md){
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+		.titul{
+			font-weight: bold;
+			&::after{
+				background-color: $secundary-color;
+			}
+		}
+	}
+
+	.promotion-coin{
+		background-image: url(/images/promotion-coin.jpg);
+		background-position: right;
+		background-size: cover;
+		text-align: left;
+		font-weight: 700;
+		@include media-breakpoint-up(xl){
+			background-position: left bottom;
+			text-align: center;
+		}
+
+	}
+
+	.buy-cell{
+		padding: 2rem;
+		.buy-sell-coin{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			.buy, .sell{
+				padding: 2rem;
+				background-color: white;
+				border-radius: 20px;
+				i{
+					font-size: 2em;
+				}
+			}
+		}
+	}
+
+	.ticket{
+		padding: 3rem;
+		.information{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-direction: column;
+			text-align: center;
+			@include media-breakpoint-up(md){
+				flex-direction: row;
+			}
+			img{
+				max-width: 20vw;
+				@include media-breakpoint-up(md){
+					max-width: 10vw;
+				}
+			}
+		}
+	}
+}

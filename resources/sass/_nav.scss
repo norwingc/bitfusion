@@ -28,7 +28,20 @@
 	.navbar-nav{
 		.nav-item{
 			.nav-link{
+				position: relative;
 				color: black;
+				font-weight: bold;
+				&:hover:not(.singIn):not(.singUp){
+					&:after{
+						content: "";
+						position: absolute;
+						bottom: 0;
+						background: $tertiary-color;
+						height: 5px;
+						left: 0;
+						right: 0;
+					}
+				}
 			}
 		}
 		@include media-breakpoint-up(lg){
